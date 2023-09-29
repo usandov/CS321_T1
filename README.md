@@ -1,6 +1,8 @@
 # CS321_T1
 CS321 Team 1 Group Project
 
+Fantasy Fanatic
+
 Uveimar Sandoval: usandova@gmu.edu
 Farith Bascope: fbascope@gmu.edu
 Daniel Curtis: dvurtis7@gmu.edu
