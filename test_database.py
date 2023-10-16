@@ -76,3 +76,23 @@ def test_teamCIN():
 def test_teamCINDef():
 	result = extract_RosterData("https://www.espn.com/nfl/team/roster/_/name/cin/cincinnati-bengals")
 	assert result[34] == "Jeff Gunter DE 24 6\' 4\""
+
+def test_playerOne():
+	result = extract_PlayerStats("https://www.espn.com/nfl/player/stats/_/id/4379399/james-cook")
+	assert result == ["James Cook", 507, 1, 21]
+	
+def test_playerTwo():
+	result = extract_PlayerStats("https://www.espn.com/nfl/player/stats/_/id/3925347/damien-harris")
+	assert result == ["Damien Harris", 462, 0, 17]
+
+def test_playerThree():
+	result = extract_PlayerStats("https://www.espn.com/nfl/player/stats/_/id/3915411/ty-johnson")
+	assert result == ["Ty Johnson", 160, 2, 12]
+
+def test_Josh():
+	result = queryPlayer("Josh Allen")
+	assert result == [762, 3, 0]
+
+def test_Kyle():
+	result = queryPlayer("Kyle Allen")
+	assert result == [13, 0, 0]
