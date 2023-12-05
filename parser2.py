@@ -99,6 +99,7 @@ def init(url_init):
             for row_data in table_data:
                 print(row_data)
             print()
+
         return combined_tables
     else:
         return 0;
