@@ -1,5 +1,3 @@
-
-
 def test_first():
 	mycursor.execute("SELECT Name FROM NFL")
 	result = mycursor.fetchone()
