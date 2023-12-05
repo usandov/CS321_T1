@@ -94,11 +94,11 @@ def init(url_init):
                 continue
             combined_tables.append(scrape_table(table1, table2, desired_columns))
 
-        for idx, table_data in enumerate(combined_tables):
-            print(f"Table {idx + 1}:")
-            for row_data in table_data:
-                print(row_data)
-            print()
+        # for idx, table_data in enumerate(combined_tables):
+        #     print(f"Table {idx + 1}:")
+        #     for row_data in table_data:
+        #         print(row_data)
+        #     print()
 
         return combined_tables
     else:
@@ -106,6 +106,7 @@ def init(url_init):
 
 
 if __name__ == "__main__":
-    # url = "https://www.espn.com/nfl/team/stats/_/name/buf/buffalo-bills"
-    url = "https://www.espn.com/nfl/team/stats/_/name/ne/new-england-patriots"
+    #url = "https://www.espn.com/nfl/team/stats/_/name/buf/buffalo-bills"
+    #url = "https://www.espn.com/nfl/team/stats/_/name/ne/new-england-patriots"
+    url = "https://www.espn.com/nfl/team/stats/_/name/ari/arizona-cardinals"
     init(url)
