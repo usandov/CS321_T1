@@ -12,3 +12,15 @@ Omar Naseem: onaseem@gmu.edu
 Joshua Reyes: jreyes36@gmu.edu
 
 
+Front-End: 
+  index.html
+  tech.html
+  style.css
+
+Back-End:
+  database.py
+  parser.py
+  parser2.py
+
+Testers
+  test_database.py
